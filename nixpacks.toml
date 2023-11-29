@@ -1,0 +1,21 @@
+[phases.setup]
+nixPkgs = [
+  "openssl", 
+  "pkg-config", 
+  "python3", 
+  "gcc", 
+  "libgcc", 
+  "gnumake", 
+  "dpkg"
+  ]
+
+[phases.install]
+cmds = [
+  "yarn",
+  ]
+
+[phases.build]
+cmds = [
+  "yarn build",
+  "yarn workspace @calcom/prisma db-deploy",
+  ]

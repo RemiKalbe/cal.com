@@ -6,7 +6,9 @@ nixPkgs = [
   "gcc", 
   "libgcc", 
   "gnumake", 
-  "dpkg"
+  "dpkg",
+  "nodejs_21",
+  "yarn"
   ]
 
 [phases.install]
